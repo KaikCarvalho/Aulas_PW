@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+body{
+    background-color: #f0f0f0;
+    padding: 20px;
+    flex-grow: 1;
+  }
+
+header{
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkred;
+}
+
+h1{
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px; 
+    padding: 20px;
+  }
+
+.card{
+    margin: 2px;
+    flex: 1 1 300px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 280px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    overflow: hidden;  
+    gap: 10px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0.2);
+}
+
+.moldura-img{
+    max-width: 100%;
+    max-height: 150px;
+    overflow: hidden;
+    background-color: #eee;
+    border: 1, solid;
+    border-radius: 4px;
+}
+
+.moldura-img img{
+    width: 300px;
+    height: 150px;
+    flex-shrink: 0;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.card:hover img{
+    transform: scale(1.1);
+}
+.card-content{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.card h3{
+    padding: 0 0 15px 0;
+    color: black;
+}
+
+.card p{
+    font-size: 0.9rem;
+    color: #414141;
+}
