@@ -35,7 +35,7 @@ h1{
 
 .card{
     margin: 2px;
-    flex: 1 1 300px;
+    flex: 1 1 280px;
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -61,13 +61,13 @@ h1{
     max-height: 150px;
     overflow: hidden;
     background-color: #eee;
-    border: 1, solid;
+    border: none;
     border-radius: 4px;
 }
 
 .moldura-img img{
-    width: 300px;
-    height: 150px;
+    width: 250px;
+    height: 100%;
     flex-shrink: 0;
     object-fit: cover;
     display: block;
