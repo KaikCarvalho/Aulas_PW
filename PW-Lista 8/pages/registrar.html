@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<style>
+    .container{
+    width:400px;
+    margin:20px auto;
+}
+
+
+.container h1{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:32px;
+    color:#333;
+}
+
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+
+label{
+    margin-top:10px;
+    margin-bottom:5px;
+    color:#333;
+    font-size:14px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea{
+    width:100%;
+    padding:8px;
+    border:1px solid #bdbdbd;
+    background:white;
+}
+
+
+.required{
+    color:red;
+    font-size:11px;
+    margin-top:4px;
+}
+
+
+.radio-group,
+.checkbox-group{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:10px;
+}
+
+
+.radio-group label,
+.checkbox-group label{
+    font-size:13px;
+}
+
+
+textarea{
+    resize:none;
+}
+
+
+.terms{
+    margin-top:15px;
+    font-size:13px;
+}
+
+
+.buttons{
+    margin-top:10px;
+    display:flex;
+    gap:10px;
+}
+
+
+.buttons input,
+.buttons button{
+    background:#008ccf;
+    color:white;
+    border:none;
+    padding:10px 25px;
+    border-radius:15px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+
+.buttons input:hover,
+.buttons button:hover{
+    opacity:0.9;
+}
+
+
+p{
+    margin-top:15px;
+    margin-bottom:8px;
+    font-size:13px;
+    color:#555;
+}
+
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../home.html">
+                    <img src="https://github.com/pw1etec/exercicios-pw/blob/main/pw-lista-8/assets/logo-1.png?raw=true" alt="">
+                </a>
+            </div>
+
+
+            <ul class="menu">
+                <li><a href="#">SMARTPHONES</a></li>
+                <li><a href="#">TABLETS</a></li>
+                <li><a href="#">COMPUTADORES</a></li>
+            </ul>
+
+
+            <div class="auth">
+                <a href="login.html">LOGIN</a>
+                <a href="registrar.html">REGISTRAR</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="container">
+
+
+        <h1>REGISTRAR</h1>
+
+
+        <form>
+
+
+            <label>Nome</label>
+            <input type="text" placeholder="Seu nome aqui">
+            <span class="required">Obrigatório</span>
+
+
+            <label>Email</label>
+            <input type="email" placeholder="email@email.com">
+            <span class="required">Obrigatório</span>
+
+
+            <label>Senha</label>
+            <input type="password" placeholder="senha">
+            <span class="required">Obrigatório</span>
+
+
+            <label>País de nascimento</label>
+            <select>
+                <option>Chile</option>
+                <option>Brasil</option>
+                <option>Argentina</option>
+                <option>Uruguai</option>
+            </select>
+
+
+            <span class="required">Obrigatório</span>
+
+
+            <label>Gênero</label>
+
+
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="genero">
+                    Masculino
+                </label>
+
+
+                <label>
+                    <input type="radio" name="genero">
+                    Feminino
+                </label>
+
+
+                <label>
+                    <input type="radio" name="genero">
+                    Prefiro não dizer
+                </label>
+            </div>
+
+
+            <label>Hobbies</label>
+
+
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox">
+                    Guitarra
+                </label>
+
+
+                <label>
+                    <input type="checkbox">
+                    Futebol
+                </label>
+
+
+                <label>
+                    <input type="checkbox">
+                    Tênis
+                </label>
+
+
+                <label>
+                    <input type="checkbox">
+                    Programar
+                </label>
+            </div>
+
+
+            <label>Comentários</label>
+
+
+            <textarea rows="6"></textarea>
+
+
+            <div class="terms">
+                <input type="checkbox">
+                <span>Aceito os termos e condições.</span>
+            </div>
+
+
+            <p>Botão enviar com tag 'input'</p>
+
+
+            <div class="buttons">
+                <input type="submit" value="Registrar">
+                <input type="button" value="Cancelar">
+            </div>
+
+
+            <p>Botão enviar com tag 'button'</p>
+
+
+            <div class="buttons">
+                <button type="submit">Registrar</button>
+                <button type="reset">Cancelar</button>
+            </div>
+
+
+        </form>
+
+
+    </main>
+
+
+
+</body>
+</html>

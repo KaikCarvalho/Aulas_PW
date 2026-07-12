@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://github.com/pw1etec/exercicios-pw/blob/main/pw-lista-8/assets/bg-2.png?raw=true);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* 2. CONFIGURAÇÕES DO HEADER (O topo da página) */
+header {
+    background:#ff4d00;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 30px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* 3. CONFIGURAÇÕES DO NAV E LINKS (O menu de navegação dentro do header) */
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;       /* Alinha os itens do menu lado a lado */
+    list-style: none;    /* Remove as bolinhas do bullet point */
+    margin-left: 30px;
+    gap: 25px;           /* Cria o espaçamento entre cada link */
+}
+
+header nav a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.auth{
+    margin-left: auto;
+    display: flex;
+    gap: 15px;
+}
